@@ -337,7 +337,20 @@ nav li {
           `;
           break;
         case 7:
-          content = "Content for الصفحة الرئيسية";
+          content = `  
+<div>
+  <h2>Make a Post</h2>
+  <form id="postForm">
+    <label for="postContent">Your Post:</label>
+    <textarea id="postContent" name="postContent" rows="4" required></textarea>
+    <button type="button" onclick="submitPost()">Submit</button>
+  </form>
+
+  <div id="posts">
+    <!-- Display posts here -->
+  </div>
+</div>
+            `;
           break;
       }
       document.getElementById("content").innerHTML = content;
@@ -363,7 +376,51 @@ nav li {
   </style>
 
   <script>
-  
+
+// Keep an array to store posts
+let posts = [];
+
+// Function to submit a post
+function submitPost() {
+  const postContent = document.getElementById('postContent').value;
+
+  if (postContent.trim() !== '') {
+    // Create a new post object
+    const newPost = {
+      content: postContent,
+      timestamp: new Date().toLocaleString(),
+    };
+
+    // Add the post to the posts array
+    posts.push(newPost);
+
+    // Clear the textarea
+    document.getElementById('postContent').value = '';
+
+    // Display the updated posts
+    displayPosts();
+  }
+}
+
+// Function to display posts
+function displayPosts() {
+  const postsContainer = document.getElementById('posts');
+  postsContainer.innerHTML = '';
+
+  // Display each post
+  posts.forEach((post) => {
+    const postElement = document.createElement('div');
+    postElement.innerHTML = `
+      <p>${post.content}</p>
+      <small>${post.timestamp}</small>
+      <hr>
+    `;
+    postsContainer.appendChild(postElement);
+  });
+}
+
+
+    
         function displayPDF(pdfFile) {
         // Hide all images
         document.querySelectorAll('img').forEach(img => {
