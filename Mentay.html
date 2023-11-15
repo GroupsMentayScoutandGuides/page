@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Groups Mentay Scout and Guides</title>
+  <link rel="icon" type="image/x-icon" href="67937879_2456724804611807_8360480997912870912_n.jpg">
+  <script src="node.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+
+    #animation {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff; /* Set the background color as needed */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: fadeOut 2s 2s forwards;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeOut {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+    }
+
+
+    .bottom-right {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+    }
+
+    #Mentay-logo {
+      margin-left: 20px;
+    }
+
+/* Define consistent spacing */
+:root {
+  --spacing-small: 0.5rem;
+  --spacing-medium: 1rem;
+  --spacing-large: 2rem;
+}
+
+.button {
+  background-color: #2DA7FA; /* Light blue */
+  border: none;
+  color: white;
+  padding: var(--spacing-medium);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: var(--spacing-small);
+  cursor: pointer;
+  border-radius: var(--spacing-medium);
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #6495ED; /* Deeper blue on hover */
+  color: white;
+}
+
+
+/* Style the logos */
+#youtube-logo,
+#instagram-logo,
+#facebook-logo,
+#twitter-logo {
+  margin-right: var(--spacing-medium);
+}
+
+/* Style the navigation menu */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 var(--spacing-medium);
+}
+
+/* Style the header content */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style the post */
+.post {
+  /* Add your styles here */
+}
+
+.post img {
+  /* Add your styles here */
+}
+
+.post p {
+  /* Add your styles here */
+}
+
+/* Style the footer */
+.footer-left {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+
+#center-image {
+  display: block;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+
+
+  .header-content {
+    display: flex;
+    align-items: center;
+  }
+
+  #Mentay-logo {
+    margin-left: 20px;
+  }
+
+  .smaller-images img {
+    max-width: 200px;
+    height: auto;
+  }
+
+  #pdf-viewer {
+    display: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  #pdf-frame {
+    width: 100%;
+    height: 100%;
+  }
+
+  #library-container {
+    display: flex;
+  }
+
+#pdf-viewer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9); /* Add a semi-transparent white background */
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+#pdf-frame {
+  max-width: 90%; /* Adjust the width as needed */
+  max-height: 90%; /* Adjust the height as needed */
+}
+
+</style>
+
+</head>
+<body>
+
+  <!-- Add a separate div for the animation -->
+  <div id="animation">
+    <!-- Add your animation content here (e.g., a loading spinner) -->
+    <img src="1646567555967.jpg" alt="Loading">
+  </div>
+
+  <header>
+    <div class="header-content">
+      <img src="67937879_2456724804611807_8360480997912870912_n.jpg" alt="Groups Mentay Scout and Guides" width="120" height="120" id="Mentay-logo">
+      <div>
+        <h1>Groups Mentay Scouts and Guides Website!</h1>
+        <h2 dir="rtl">  الصفحة الرسمية لمجموعات منطي الكشفية و الإرشادية !</h2>
+      </div>
+      <script>
+        // JavaScript to remove the animation and show the page content
+        setTimeout(function () {
+          document.getElementById("animation").style.display = "none";
+          document.body.style.overflow = "visible"; // Enable scrolling
+        }, 3000); // Wait for 4 seconds (2s animation in + 2s animation out)
+      </script>
+
+      <div>
+        <a href="https://www.youtube.com/channel/UC7Jbg0fS592hepEI4w0aQzA" target="_blank">
+          <img src="youtube-logo-5-2.png" alt="Youtube logo" width="70" height="50" id="youtube-logo">
+        </a>
+        <a href="https://www.instagram.com/mentayscouts/" target="_blank">
+          <img src="1200px-Instagram_logo_2016.svg-1-min.png" alt="Instagram logo" width="50" height="50" id="instagram-logo">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100008229345995&mibextid=9R9pXO" target="_blank">
+          <img src="facebook-clipart-png-12.png" alt="Facebook logo" width="50" height="50" id="facebook-logo">
+        </a>
+        <a href="https://www.twitter.com/MentayScout" target="_blank">
+          <img src="twitterlogo-460x460.png" alt "Twitter logo" width="50" height="50" id="twitter-logo">
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><button class="button" onclick="changeContent(1)">المراحل</button></li>
+      <li><button class="button" onclick="changeContent(2)">الأنشطة</button></li>
+      <li><button class="button" onclick="changeContent(3)">المكتبة</button></li>
+      <li><button class="button" onclick="changeContent(4)">اللجان</button></li>
+      <li><button class="button" onclick="changeContent(5)">الإنجازات</button></li>
+      <li><button class="button" onclick="changeContent(6)">تاريخ المجموعات</button></li>
+      <li><button class="button" onclick="changeContent(7)">الصفحة الرئيسية</button></li>
+    </ul>
+  </nav>
+
+  <div id="content"></div>
+  <img src="1646567555967.jpg" alt="Your Image" id="center-image">
+
+  <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=100008229345995&amp;mibextid=9R9pXO" data-tabs="timeline" data-width="180" data-height="70" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
+
+  <div class="footer-left">© 2023 Mentay Scouts and Guides</div>
+
+
+  <script>
+
+    function hideImage() {
+      document.getElementById("center-image").style.display = "none";
+    }
+
+    function changeContent(buttonNumber) {
+      var content = "";
+      switch (buttonNumber) {
+        case 1:
+          content = "content for المراحل";
+          break;
+        case 2:
+          content = "Content for الأنشطة";
+          break;
+        case 3:
+          content = `
+<img src="sco.png" alt="Image 1" onclick="displayPDF('منهج كشافة.pdf')">
+<img src="mor.png" alt="Image 2" onclick="displayPDF('مناهج المرشدات.pdf')">
+<img src="zha.png" alt="Image 3" onclick="displayPDF('مناهج مصر للزهرات ج.pdf')">
+<img src="ash.png" alt="Image 4" onclick="displayPDF('منهج اشبال.pdf')">
+<img src="jwala.png" alt="Image 5" onclick="displayPDF('مناهج الجوال.pdf')">
+<img src="jwal.png" alt="Image 6" onclick="displayPDF('مناهج الجوال.pdf')">
+
+<div id="pdf-container">
+    <embed id="pdf" type="application/pdf" width="100%" height="100%">
+</div>
+          `;
+          break;
+        case 4:
+          content = "Content for اللجان";
+          break;
+        case 5:
+          content = `
+            <div style="text-align: right;">
+              <h1 style="font-size: 20px;" >إنجازات مجموعات منطي الكشفية والارشاديه
+                منارة الكشافه والمرشدات بالقليوبيه من 1 / 9 / 2008 حتي الآن
+              </h1>
+              <hr>
+                  <ul style="font-size: 17px; text-align: right; direction: rtl;">
+                     <li>مهرجان سراي القبة و الحصول على المركز الأول عام (عام 2009 و 2012 و 2013).<br></li>
+                     <li>مهرجان سراي القبة و الحصول على المركز الثاني عام 2010.<br></li>
+                     <li>مهرجان منشية التحرير و الحصول على المركز الأول و الثاني في بعض مجالات التسابق .<br></li>
+                     <li>مهرجان منشية التحرير و الحصول على المركز الثاني عام (عام 2010 و 2013 و 2017) و مركز أول (2018 - 2019 - 2021 - 2022 - 2023).<br></li>
+                     <li>مهرجان الأسمار و الدورة الرمضانية لمجموعات المنشية الكشفية و الحصول على المركز الثالث عام (عام 2009 و 2010).<br></li>
+                     <li>مهرجان صنا فير الكشفي و الحصول على المركز الأول عام (عام 2010 و 2011 و 2014 و 2015 و 2017 و 2019).<br></li>
+                     <li>مهرجان مجموعات القدس الكشفية بالإسماعيلية و الحصول على المركز الأول عام (عام 2010 و 2012 و 2013 و 2014 و 2019 و 2022) و على المركز الثاني عام (عام 2011 و 2016 و 2017 و 2023).<br></li>
+                     <li>مهرجان مجموعات قلما الكشفية و الحصول على المركز الأول عام (عام 2012 و 2013 و 2014 و 2016).<br></li>
+                     <li>مهرجان حدائق القبة و الحصول على المركز الأول عام 2012.<br></li>
+                     <li>بطولة المحافظة لمرحلة الأشبال و الحصول على المركز الأول من عام 2009 حتى 2023.<br></li>
+                     <li>بطولة المحافظة لمرحلة الكشافة و المرشدات و الحصول على المركز الأول من عام 2009 حتى 2023.<br></li>
+                     <li>بطولة المحافظة لمرحلة الزهرات و الحصول على المركز الأول  من عام 2010 حتى 2023.<br></li>
+                     <li>بطولة القاهرة الكبرى لمرحلة الكشاف المتقدم و الحصول على المركز الأول عام (عام 2009).<br></li>
+                     <li>بطولة المحافظة لعشائر الجوالة المركز الأول (عام 2011 – 2018 – 2019 – 2021 – 2023).<br></li>
+                     <li>الدورة الرمضانية لمجموعات منطي الكشفية و الحصول على المركز الأول عام (عام 2011 و 2013 و 2014).<br></li>
+                     <li>بطولة الجمهورية لمراحل مختلفة و الحصول على المركز الأول في جميع المراحل عام 2012 .<br></li>
+                     <li>الاشتراك في السفر إلى الخارج للمرشدات و الكشافة لتمثيل مصر (بالأردن – السودان – لبنان).<br></li>
+                     <li>بطولة الجمهورية عام 2014 ببورسعيد مركز أول أشبال و مركز ثاني زهرات.<br></li>
+                     <li>بطولة الجمهورية عام 2015 بالإسكندرية مركز أول أشبال و مركز أول زهرات و مركز رابع مرشدات.<br></li>
+                     <li>بطولة الجمهورية عام 2016 بالإسكندرية مركز أول أشبال.<br></li>
+                     <li>بطولة الجمهورية عام 2017 بالإسكندرية مركز أول كشافة و مركز رابع أشبال.<br></li>
+                     <li>بطولة الجمهورية عام 2018 ببورسعيد مركز أول زهرات و مركز ثالث أشبال.<br></li>
+                     <li>بطولة الجمهورية عام 2019 بالإسكندرية مركز أول أشبال و مركز ثاني مرشدات.<br></li>
+                     <li>بطولة الجمهورية عام 2021 بالإسكندرية مركز أول مرشدات.<br></li>
+                     <li>بطولة الجمهورية عام 2022 بالإسكندرية مركز أول أشبال و مركز أول زهرات.<br></li>
+                </ul>
+            </div>
+          `;
+          break;
+        case 6:
+          content = `
+            <div id="centered-content" style="text-align: center; margin-left: 60px; margin-right: 60px;" >
+              <h1>المجموعات في سطور</h1>
+              <hr>
+              <p style="font-size: 20px;">بدأ تكوين النشاط الكشفي والارشادي في (مركز شباب منطي) تحت إشراف القائد مصطفى صبحي إبراهيم في يوم 1 / 9 / 2008
+              وكان في البداية تكوين فريق الأشبال، ثم تم تسجيل الفريق في مديرية الشباب والرياضة في يوم 1 / 10 / 2008. ثم تم تكوين فريق الكشافة والمرشدات
+              تم تسجيل هذه الفرق في مديرية الشباب والرياضة في يوم 1 / 3 / 2009 تحت إشراف القائد إبراهيم صبحي إبراهيم والقائدة فاطمة عادل والقائدة إيمان عربي
+              ثم تم تكوين باقة الزهرات وتم تسجيل باقة الزهرات في 1 / 8 / 2010 تحت إشراف القائدة هبة محمد عبد السلام والقائدة كريمة السيد علي
+              ثم تم تكوين الكشاف المتقدم تحت إشراف القائد أحمد عاطف السيد والمرشدة المتقدمة والجوالة والجوالات في عام 2009
+              كانت مجموعات منطي الكشفية والإرشادية تشارك في العديد من الأنشطة واللقاءات والمهرجانات والبطولات والمسابقات، وقد حصلت على الكثير والكثير من المراكز منذ عام 2009</p>
+            </div>
+          `;
+          break;
+        case 7:
+          content = "Content for الصفحة الرئيسية";
+          break;
+      }
+      document.getElementById("content").innerHTML = content;
+      document.getElementById("center-image").style.display = 'none'; // add this line
+    }
+
+  </script>
+
+  <style>
+
+    /* Styles for the smaller images */
+  .smaller-images img {
+    max-width: 200px; /* Adjust the width as needed */
+    height: 100px;
+  }
+
+  .center-images {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  </style>
+
+  <script>
+  
+        function displayPDF(pdfFile) {
+        // Hide all images
+        document.querySelectorAll('img').forEach(img => {
+            img.style.display = 'none';
+        });
+
+        // Display the PDF container
+        document.getElementById('pdf-container').style.display = 'block';
+
+        // Load and display the PDF
+        var pdfEmbed = document.getElementById('pdf');
+        pdfEmbed.src = pdfFile;
+    }
+
+  // Function to go back to the library
+  function hidePdf() {
+    document.querySelector('#pdf-viewer').style.display = 'none';
+    document.querySelector('#library-container').style.display = 'flex';
+    document.querySelector('#pdf-frame').src = '';
+  }
+
+  // Add click event listeners to images
+  const libraryImages = document.querySelectorAll('.library-images img');
+  libraryImages.forEach((image) => {
+    image.addEventListener('click', function () {
+      const pdfFileName = image.getAttribute('data-pdf');
+      showPdf(pdfFileName);
+    });
+  });
+
+</script>
+
+
+</body>
+</html>
